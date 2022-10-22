@@ -36,7 +36,7 @@ do
           amount=$[amount+quantity*25]
           ;;
   esac
-  read -p "Do you want to add any other item [ye\NO]" options
+  read -p "Do you want to add any other item [yes\NO]" options
   case $options in
       [yY]|[YY][Ee][Ss])
            continue
