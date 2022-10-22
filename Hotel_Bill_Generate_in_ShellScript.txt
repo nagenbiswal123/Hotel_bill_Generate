@@ -1,26 +1,26 @@
-#WAS to generete hotel bill based on customer selected items. THe items and Price information is as follows.
+#WAS to generete hotel bill based on customer selected items. The items and Price information is as follows.
 
 #! /bin/bash
 
-echo "Welcome to the Nagen Hotel"
+echo "Welcome to the Nagen's Hotel"
 echo "Menu Items:"
-echo "A----> Vadapooo(Each plate Rs-40/-)"
-echo "B----> Dosa(Each plate Rs-50/-)"
-echo "C----> Poori(Each plate Rs-40/-)"
-echo "D----->Idli(Each plate Rs-25/-)"
+echo "A----> Vadapo (Each plate Rs-40/-)"
+echo "B----> Dosa   (Each plate Rs-50/-)"
+echo "C----> Poori  (Each plate Rs-40/-)"
+echo "D----->Idli   (Each plate Rs-25/-)"
 echo
 amount=0
 while [ true ]
 do
   echo "-------------------"
-  echo "A---> Vadapooo (Each plate of Rs-40/-)"
-  echo "B---> Dosa(Each plate Rs-50/-)"
-  echo "C----> Poori(Each plate Rs-40/-)"
-  echo "C---> Idli(Each plate Rs-25/-)"
+  echo "A--->  Vadapao (Each plate of Rs-40/-)"
+  echo "B--->  Dosa    (Each plate Rs-50/-)"
+  echo "C----> Poori   (Each plate Rs-40/-)"
+  echo "C--->  Idli    (Each plate Rs-25/-)"
   read -p "Choose your required item A|B|C|D :" item
   case $item in
         A)
-         read -p "Enter the number of vadapooo plate you required:" quantity
+         read -p "Enter the number of vadapao plate your required:" quantity
          amount=$[amount+quantity*40]
          ;;
         B)
@@ -32,7 +32,7 @@ do
           amount=$[amount+quantity*40]
           ;;
         D)
-          read -p "ENter the number of Idli required: " quantity
+          read -p "Enter the number of Idli required: " quantity
           amount=$[amount+quantity*25]
           ;;
   esac
